@@ -1,0 +1,22 @@
+Código olá mundo:
+print('olá mundo!')
+
+código dados pessoais e boas vindas:
+n = input('qual o seu nome?')
+p = input('qual o seu peso?')
+i = input('qual a sua idade?')
+print('olá, seja bem vindo {} seu peso é {} e sua idade é {}'.format(n, p, i))
+
+código calculadora:
+n1 = int(input('qual o primeiro número?'))
+n2 = int(input('qual o segundo número?'))
+s = n1 + n2
+print('a soma de {} e {} é igual a {}'.format(n1, n2, s))
+
+analisar váriaveis:
+a = input('digite algo')
+print('está em maiúsculo?', a.isupper())
+print('é númérico?', a.isnumeric())
+print('é alfanúmérico?', a.isalnum())
+print('possui apenas espaços?', a.isspace())
+possui mais variáveis mas não usarei todas para não ficar muito extenso.
