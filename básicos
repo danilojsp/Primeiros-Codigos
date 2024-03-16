@@ -20,3 +20,83 @@ print('é númérico?', a.isnumeric())
 print('é alfanúmérico?', a.isalnum())
 print('possui apenas espaços?', a.isspace())
 possui mais variáveis mas não usarei todas para não ficar muito extenso.
+
+antecessor e sucessor:
+n = float(input('qual o número?'))
+print(' o antecessor do número {} é {} e seu sucessor é {}'.format(n, n-1, n+1))
+
+dobro, triplo e raiz:
+n = float(input('qual o número?'))
+print(' o dobro é {} \n o triplo é {} \n a raiz é {:.2f}'.format(n*2, n*3, pow(n, (1/2))))
+
+média de dois valores:
+v = float(input('qual o primeiro valor'))
+v2 = float(input('qual o segundo valor?'))
+s = v+v2
+print('a média de {} e {} é igual a {:.1f}'.format(v, v2, s/2))
+
+metragem:
+n = float(input('umda distância em metros?'))
+km = n/1000
+hm = n/100
+dam = n/10
+dm = n*10
+cm = n*100
+mm = n*1000
+print('{}m equivalem a {}km, {}hm, {}dam, {}dm, {}cm,{}mm,'.format(n, km, hm, dam, dm, cm, mm))
+
+tabuada:
+protótipo (feio mas funcional)
+n = int(input('digite um número para ver sua tabuada:'))
+print('{}\n {}\n {}\n {}\n {}\n {}\n {}\n {}\n {}\n {}\n'.format( n*1, n*2, n*3, n*4, n*5, n*6, n*7, n*8, n*9, n*10,))
+finalizado e organizado:
+n = int(input('digite um número para ver sua tabuada:'))
+print('-' * 12)
+print('{} x {:2} = {}'.format(n, 1, n*1))
+print('{} x {:2} = {}'.format(n, 2, n*2))
+print('{} x {:2} = {}'.format(n, 3, n*13))
+print('{} x {:2} = {}'.format(n, 4, n*4))
+print('{} x {:2} = {}'.format(n, 5, n*5))
+print('{} x {:2} = {}'.format(n, 6, n*6))
+print('{} x {:2} = {}'.format(n, 7, n*7))
+print('{} x {:2} = {}'.format(n, 8, n*8))
+print('{} x {:2} = {}'.format(n, 9, n*9))
+print('{} x {:2} = {}'.format(n, 10, n*10))
+print('-' * 12)
+
+converter dólar e reais:
+r = float(input('quantos reais você tem? R$'))
+d = r / 4.99
+print('com R${:.2f} você pode comprar US${:.2f}'.format(r, d))
+
+pintura de parde:
+X = float(input('largura da parede?:'))
+Y = float(input('qual altura da parede?:'))
+A = X*Y
+print(' a sua parede tem a dimensão de {}x{} e sua área é de {}m².'.format(X, Y, A))
+print('para pintar essa parede, você precisará de {}l de tinta.'.format(A/2))
+
+desconto de 5%:
+p = float(input('qual o preço mdo produto? R$'))
+np = p - (p * 5 / 100)
+print(' o produto que custava R${}, com o desconto de 5% passou a custar R${}'.format(p, np))
+
+reajuste salarial de 15%:
+s = float(input('qual o salário?R$'))
+r = s + (s * 15 / 100)
+print('com o reajuste salarial, o funcionario passou a recber 15% a mais, logo o salario que'
+'era de R${:.2f} passou a valer R${:.2f}'.format(s, r))
+
+conversor de temperatura:
+c = float(input('informe a temperatura em °C:'))
+conv = (c * 9 / 5) + 32
+print('a temperatura de {}°C corresponde a {}°F!'.format(c, conv))
+
+aluguel de carro:
+d = int(input('quatos dias alugados?'))
+k = float(input('quantos km percorridos?'))
+p = (d * 60) + (k * 0.15)
+print('o total que você deverá pagar para a locadora será de R${:.2f}'.format(p))
+
+
+
